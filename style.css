@@ -1,84 +1,69 @@
-/* Estilo geral */
+/* Estilização do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #2c2c2c; /* Fundo cinza escuro */
-    color: #ffffff; /* Texto branco */
+    background-color: #000000; /* Fundo escuro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centralizar verticalmente */
     margin: 0;
-    padding: 20px;
 }
 
-/* Cabeçalho */
+/* Caixa centralizada */
+.container {
+    background-color: #474746;
+    padding: 30px;
+    border-radius: 10px;
+   /* box-shadow: 0px 4px 10px rgba(250, 250, 250, 0.2); */
+    text-align: left;
+    width: 350px;
+}
+
+/* Centralizando os textos à esquerda */
 h1 {
     text-align: center;
-    color: #f8f9fc; /* Azul escuro */
+    color: #f8f9fc; 
     margin-bottom: 20px;
 }
 
-/* Botão Pesquisar */
-#pesquisar {
+/* Cada campo (label + input) */
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Estiliza as labels */
+.campo label {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Caixa de entrada */
+.campo input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #a09d9d;
+    color: white;
+}
+
+/* Botão centralizado */
+button {
     display: block;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 16px;
-    background-color: #1a3c72; /* Azul escuro */
+    background-color: #1a3c72;
     color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
-
-#pesquisar:hover {
-    background-color: #4169e1; /* Azul mais claro */
-}
-
-/* Caixa de texto */
-#caixaTexto {
-    display: block;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #cccccc; /* Cinza claro */
-    border-radius: 5px;
-    background-color: #333333; /* Fundo cinza escuro */
-    color: #ffffff; /* Texto branco */
-}
-
-/* Botões de Adicionar e Excluir */
-div {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#adicionar, #excluir {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-
-#adicionar {
-    background-color: #1a3c72; /* Azul escuro */
-    color: #ffffff;
-}
-
-#adicionar:hover {
-    background-color: #4169e1; /* Azul mais claro */
-    transform: scale(1.05); /* Efeito leve de zoom */
-}
-
-#excluir {
-    background-color: #b22222; /* Vermelho escuro */
-    color: #ffffff;
-}
-
-#excluir:hover {
-    background-color: #ff6347; /* Vermelho claro */
-    transform: scale(1.05); /* Efeito leve de zoom */
+/* Quando o mouse está sobre o elemento  */
+button:hover {
+    background-color: #4169e1; 
 }

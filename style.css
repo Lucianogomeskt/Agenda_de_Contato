@@ -1,0 +1,84 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2c2c2c; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+    text-align: center;
+    color: #f8f9fc; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+/* Botão Pesquisar */
+#pesquisar {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1a3c72; /* Azul escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pesquisar:hover {
+    background-color: #4169e1; /* Azul mais claro */
+}
+
+/* Caixa de texto */
+#caixaTexto {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc; /* Cinza claro */
+    border-radius: 5px;
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Botões de Adicionar e Excluir */
+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#adicionar, #excluir {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#adicionar {
+    background-color: #1a3c72; /* Azul escuro */
+    color: #ffffff;
+}
+
+#adicionar:hover {
+    background-color: #4169e1; /* Azul mais claro */
+    transform: scale(1.05); /* Efeito leve de zoom */
+}
+
+#excluir {
+    background-color: #b22222; /* Vermelho escuro */
+    color: #ffffff;
+}
+
+#excluir:hover {
+    background-color: #ff6347; /* Vermelho claro */
+    transform: scale(1.05); /* Efeito leve de zoom */
+}
